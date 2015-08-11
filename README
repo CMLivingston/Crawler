@@ -1,0 +1,26 @@
+This is Chris Livingston's C implementation of a search engine web crawler. 
+
+For simple demo of error handling and successful use, type in command line:
+	
+	mkdir data;
+	crawlerTest.sh
+
+You can read a test log that was created by this test script in the working directory. 
+
+
+To assmeble and run for yourself: 
+
+type "make" to assemble
+
+type "make clean" to clean up unneccesary files
+
+NOTE: make sure there is an empty directory ('data') in the working directory
+
+NOTE: Testing this program on well-known sites will be relatively unsuccessful as there are obstacles preventing the program from crawling at a further depth than 1. 
+
+The executable will fill the target directory with the html content from every html page listed on the target url and every page within that URL until the maximum depth is reached.
+
+To test it out at a depth of 2:
+
+Enter:
+	crawler http://old-www.cs.dartmouth.edu/~cs50/tse/ ./data 2	

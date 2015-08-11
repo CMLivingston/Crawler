@@ -1,0 +1,3 @@
+I tested the crawler program by creating a make file titled "Makefile" to compile the program from the various excecutables that make up the file. 
+
+I wrote crawlerTest.sh to automate the testing and output incorrect and correct usage examples to a log file that will be created in the working directory at the time of crawlerTest.sh excectution. 
