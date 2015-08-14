@@ -7,8 +7,6 @@
  * Author: Chris Livingston
  * Date: 
  *
- * You should include in this file your functionality for the hashtable as
- * described in the assignment and lecture.
  */
 /* ========================================================================== */
 
