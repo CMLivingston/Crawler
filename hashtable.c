@@ -87,7 +87,7 @@ int HashTableLookup(HashTable *table, char *url){
            
             return 0;
         }
-        else if (nodeToExamine->next == NULL){ // only one eeeeeeeelement and it is not the same url
+        else if (nodeToExamine->next == NULL){ // only one element and it is not the same url
             
             return 1;
         }
@@ -100,7 +100,7 @@ int HashTableLookup(HashTable *table, char *url){
             while (currentNode != NULL)
             {
 
-              if (strcmp(currentNode->url, url) != 0 ){ // diff URL 
+              if (strcmp(currentNode->url, url) != 0 ){ // different URL 
 
                     uniqueBool = 0; // changed from 1
                }
@@ -129,7 +129,6 @@ int HashTableLookup(HashTable *table, char *url){
             return 0; // found it
         }
 
-
     }
     else{
         
@@ -147,8 +146,6 @@ void CleanTable(HashTable* table) {
 
     if (n != NULL){
          if (n->url != NULL){
-        printf("freeing\n");
-        printf("%s\n", n->url);
         free(n->url);
         }
     
